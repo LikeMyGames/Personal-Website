@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index.html",
-            "file": "g:\\Projects\\VSCode\\HTML\\HTML_Test\\index.html"
+            "file": "g:\\Projects\\VSCode\\HTML\\Personal-Website\\index.html"
         }
     ]
 }

@@ -1,16 +1,37 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <svg height=800 width="150" class="sideBar">
+        <!--
+        <svg height="750" width="100" class="sideBar">
             <rect x="0" y="0" width="100" height="750" rx="50" ry="50" stroke-linejoin="round" fill="#b3afa8"/>
-            <circle cx="50" cy="50" r="40" stroke-width="0" fill="#e6e1d8" />
+            <circle cx="50" cy="50" r="40" stroke-width="0" fill="#e6e1d8" >
+                home
+            </circle>
+            <title>
+
+            </title>
             <circle cx="50" cy="175" r="40" stroke-width="0" fill="#e6e1d8" />
+            <circle cx="50" cy="300" r="40" stroke-width="0" fill="#e6e1d8" />
+            <circle cx="50" cy="425" r="40" stroke-width="0" fill="#e6e1d8" />
+            <circle cx="50" cy="550" r="40" stroke-width="0" fill="#e6e1d8" />
+            
         </svg>
-        <div class="sideBar">
+        <script>
+            function onmouseover(svg){
+                console.log('hovered')
+            }
+        </script>
+        -->
+        <div class="sideBar" >
             top
             <div class="sideText">
                 about me
             </div>
         </div>
+        <p class="sideBar">
+            hello world
+        </p>
+        <img src="/images/MenuBar.png">
         <style>
             h2{
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -31,10 +52,12 @@
                 border-width: 3px;
                 border-radius: 0px;
                 padding-top: 0px;
+                padding-left: -40px;
                 transition: 1s;
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
                 font-size:x-large;
                 font-weight: bolder;
+                background-image: url("/images/MenuBar.png");
             }
             .sideBar:hover{
                 padding-top:40px;
@@ -42,6 +65,8 @@
             circle{
                 fill: #e6e1d8;
                 stroke-width: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size:large;
             }
         </style>
     </head>
