@@ -23,7 +23,7 @@
         </script>
         -->
         <!--<img src="/Personal-Website/images/MenuIcon.png" position="absolute">-->
-        <div class="sideBar" >
+        <div id="menu" class="sideBar" >
             <!--
             <svg height="750" width="100" style="z-index: 8;">
                     <rect x="0" y="0" width="100" height="750" rx="50" ry="50" stroke-linejoin="round" fill="#b3afa8" style="z-index: 8;"/>
@@ -112,20 +112,23 @@
                     </p>
                 </button>
             </div>
-            <img src="/Personal-Website/images/MenuIcon.png" onclick="openOrCloseMenu()"style="height: 100px; width: 100px; top: 710px;">
+            <img id="menuIcon"src="/Personal-Website/images/MenuIcon02.png" onclick="openOrCloseMenu()"style="height: 100px; width: 100px; top: 710px;">
             <script>
                 function sameTab(str){
                     window.location.replace(str);
                 }
                 
                 function openOrCloseMenu(){
-                    var menuIcon = document.getElementById('img');
-                    var menu = document.getElementById('div');
+                    var menuIcon = document.getElementById('menuIcon');
+                    var menu = document.getElementById('menu');
+                    console.log(menu);
+                    console.log(menuIcon);
                     if(menu.style.top === "-700px"){
                         menu.style.top = "0px";
-                    }
-                    else{
+                        console.log("menu moved");
+                    }else{
                         menu.style.top = "-700px";
+                        console.log("menu moved");
                     }
                 }
             </script>
@@ -140,6 +143,9 @@
                 font-size: 20;
                 font-weight: bold;
             }
+            button{
+                background-color: #e6e1d8ff;
+            }
             div.scrollBar{
                 overflow-y: scroll;
                 overflow-x: hidden;
@@ -149,6 +155,7 @@
                 right: 0px;
                 height: 680px;
                 width: 100px;
+                padding-right: 20px;
                 scrollbar-width: 0px;
                 scroll-snap-type: mandatory;
                 scroll-snap-align: 1200px;
