@@ -63,7 +63,7 @@
                         PROJECTS
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/band.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1690px;">
+                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/band.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1690px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         BAND
@@ -206,7 +206,7 @@
             }
         </style>
     </head>
-    <body>
+    <body id="home" style="display:contents;">
         <div class="topicbox">
             <img src="">
             <p>
@@ -226,4 +226,58 @@
             }
         </style>
     </body>
+    <body id="2dart">
+
+    </body>
+    <body id="3dart">
+        
+    </body>
+    <body id="aboutme">
+        <div>
+            <h1>
+                ABOUT ME
+            </h1>
+        </div>
+    </body>
+    <body id="art">
+        
+    </body>
+    <body id="band">
+        
+    </body>
+    <body id="jobs">
+        
+    </body>
+    <body id="music">
+        
+    </body>
+    <body id="other">
+        
+    </body>
+    <body id="projects">
+        
+    </body>
+    <body id="school">
+        
+    </body>
+    <body id="tbd">
+        
+    </body>
+    <style>
+        body{
+            display:block;
+        }
+    </style>
+    <script>
+        function switchPage(str){
+            var newPage = document.getElementById(str);
+            const ids = ["2dart", "3dart", "aboutme", "art", "band", "jobs", "music", "other", "projects", "school", "tbd"];
+            for (var i = 0; i<ids.length; i++) {
+                console.log(ids[i]);
+                var temp = document.getElementById(ids[i]);
+                temp.style.display = block;
+            }
+            newPage.style.display = contents;
+        }
+    </script>
 </html>
