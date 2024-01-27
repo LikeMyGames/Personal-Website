@@ -164,9 +164,11 @@
     </head>
     <body style="overflow: hidden;">
         <div id="home" style="display: block;" class="text">
-            <h1>
-                Dominic's Website
-             </h1>
+            <div style="margin-left: 10%;margin-right: 10%;">
+                <h1>
+                    Dominic's Website
+                 </h1>
+            </div>
         </div>
         <div id="2dart" class="text">
             <h1>
@@ -233,6 +235,12 @@
             <h1>
                 MUSIC
             </h1>
+            <hr>
+            <p>
+                Throughout my life, I have played two different instruments. These two instruments are the alto saxophone and the baritone saxophone. If I had the opportunity, I could probably play most other saxophones. I have played the alto saxophone for five years and the baritone saxophone for almost 3 years.
+                I played alto saxophone in my elementary school's orchestra. For both of my years in middle school, I played the baritone saxophone in the concert band. For my seventh grade year in middle school I played the alto saxophone in jazz band but for my eight grade year, I played the baritone saxophone.
+
+            </p>
         </div>
         <div id="other" class="text">
             <h1>
@@ -272,6 +280,9 @@
                 border: none;
                 text-align: center;
             }
+            body{
+                position: absolute;
+            }
             h1{
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 55px;
@@ -279,6 +290,17 @@
             p{
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 30px;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            hr{
+                width: 70%;
+                height: 7.5px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #e6e1d8;
+                border-radius: 5px;
+                border-width: 0px;
             }
         </style>
         <script>
@@ -286,11 +308,10 @@
             let newPage = document.getElementById(str);
             const ids = ["home", "2dart", "3dart", "aboutme", "art", "band", "jobs", "music", "other", "projects", "school", "tbd"];
             for (var i = 0; i<ids.length; i++) {
-                console.log(ids[i]);
-                var temp = document.getElementById(ids[i]);
-                temp.style.display = none;
+                let temp = document.getElementById(ids[i]);
+                temp.style.display = "none";
             }
-            newPage.style.display = block;
+            newPage.style.display = "block";
         }
         </script>
     </body>
