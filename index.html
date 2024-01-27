@@ -1,111 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--
-        <svg height="750" width="100" class="sideBar">
-            <rect x="0" y="0" width="100" height="750" rx="50" ry="50" stroke-linejoin="round" fill="#b3afa8"/>
-            <circle cx="50" cy="50" r="40" stroke-width="0" fill="#e6e1d8" >
-                home
-            </circle>
-            <title>
-
-            </title>
-            <circle cx="50" cy="175" r="40" stroke-width="0" fill="#e6e1d8" />
-            <circle cx="50" cy="300" r="40" stroke-width="0" fill="#e6e1d8" />
-            <circle cx="50" cy="425" r="40" stroke-width="0" fill="#e6e1d8" />
-            <circle cx="50" cy="550" r="40" stroke-width="0" fill="#e6e1d8" />
-            
-        </svg>
-        <script>
-            function onmouseover(svg){
-                console.log('hovered')
-            }
-        </script>
-        -->
-        <!--<img src="/Personal-Website/images/MenuIcon.png" position="absolute">-->
+        <title>
+            Dominic's Website
+        </title>
         <div id="menu" class="sideBar" >
-            <!--
-            <svg height="750" width="100" style="z-index: 8;">
-                    <rect x="0" y="0" width="100" height="750" rx="50" ry="50" stroke-linejoin="round" fill="#b3afa8" style="z-index: 8;"/>
-                    <circle x="0" y="150" cx="50" cy="50" r="40" stroke-width="0" fill="#e6e1d8" style="z-index: 9;" onclick="sameTab('https://likemygames.github.io/Personal-Website/index.html')"/>
-                    <circle x="0" y="150" cx="50" cy="50" r="40" stroke-width="0" fill="#e6e1d8" style="z-index: 9;" onclick="sameTab('https://likemygames.github.io/Personal-Website/index.html')"/>
-            </svg>
-            -->
             <img src="/Personal-Website/images/MenuBar02.png" style="height: 700px; width: 100px;">
             <div class="scrollBar">
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/index.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 10px;">
+                <button onclick="switchPage('home')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 10px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/HomeIcon02.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         HOME
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/aboutme.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 150px;">
+                <button onclick="switchPage('aboutme')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 150px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/AboutMeIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         ABOUT ME
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/school.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 290px;">
+                <button onclick="switchPage('school')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 290px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/SchoolIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         SCHOOL
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/music.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 430px;">
+                <button onclick="switchPage('music')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 430px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/MusicIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         MUSIC
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/projects.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 570px;">
+                <button onclick="switchPage('projects')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 570px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/ProjectsIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         PROJECTS
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/band.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1690px;">
+                <button onclick="switchPage('band')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1690px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         BAND
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/art.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 710px;">
+                <button onclick="switchPage('art')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 710px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/ArtIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         ART
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/3dart.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 850px;">
+                <button onclick="switchPage('3dart')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 850px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/3dArtIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         3D ART
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/2dart.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 990px;">
+                <button onclick="switchPage('2dart')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 990px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/2dArtIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         2D ART
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/jobs.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1130px;">
+                <button onclick="switchPage('jobs')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1130px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/JobsIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         JOBS
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/other.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1270px;">
+                <button onclick="switchPage('other')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1270px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         OTHER
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/tbd.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1410px;">
+                <button onclick="switchPage('tbd')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1410px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         TBD
                     </p>
                 </button>
-                <button onclick="sameTab('https://likemygames.github.io/Personal-Website/subpages/tbd.html')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1550px;">
+                <button onclick="switchPage('tbd')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1550px;">
                     <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
                     <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
                         TBD
@@ -134,10 +108,6 @@
                 }
             </script>
         </div>
-        
-        <!--<img src="/Personal-Website/images/MenuBar.png">-->
-        <!--<img src="/Personal-Website/images/MenuIcon.png">-->
-        <!--<img src="/Personal-Website/images/HomeIcon.png">-->
         <style>
             h2{
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -156,22 +126,11 @@
                 right: 0px;
                 height: 660px;
                 width: 80px;
+                display: block;
                 padding-right: 40px;
                 scrollbar-width: 0px;
                 scroll-snap-type: mandatory;
                 scroll-snap-align: 1200px;
-            }
-            .sideText{
-                font-size: 20px;
-                transition: 0.5s;
-                text-align: center;
-                width: 80px;
-                z-index: 10;
-                text-underline-position: below;
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-            }
-            .sideText:hover{
-                font-size: 30px;
             }
             div.sideBar{
                 border-color:black;
@@ -182,6 +141,7 @@
                 scroll-snap-align: 1200px;
                 height: 850px;
                 width: 105px;
+                z-index: 10;
                 top: 0px;
                 border-width: 3px;
                 border-radius: 0px;
@@ -194,10 +154,6 @@
                 background-image: url("/Website/images/MenuBar.png");
                 position: absolute;
             }
-            div.sideBar:hover{
-                padding-top:0px;
-                padding-left: 0px;
-            }
             circle{
                 fill: #e6e1d8;
                 stroke-width: 0;
@@ -206,78 +162,136 @@
             }
         </style>
     </head>
-    <body id="home" style="display:contents;">
-        <div class="topicbox">
-            <img src="">
-            <p>
-                
-            </p>
+    <body style="overflow: hidden;">
+        <div id="home" style="display: block;" class="text">
+            <h1>
+                Dominic's Website
+             </h1>
         </div>
-        <style>
-            h1 {
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-            }
-            p{
-                font-family:Verdana, Geneva, Tahoma, sans-serif;
-                font-size:35px;
-            }
-            .topicbox{
-                background-image: none;
-            }
-        </style>
-    </body>
-    <body id="2dart">
-
-    </body>
-    <body id="3dart">
-        
-    </body>
-    <body id="aboutme">
-        <div>
+        <div id="2dart" class="text">
+            <h1>
+                MY 2D ART
+            </h1>
+        </div>
+        <div id="3dart" class="text">
+            <h1>
+                MY 3D ART
+            </h1>
+        </div>
+        <div id="aboutme" class="text">
             <h1>
                 ABOUT ME
             </h1>
+            <p>
+                I am just a normal person who is currenlty in highschool. more to come later.
+            </p>
         </div>
-    </body>
-    <body id="art">
-        
-    </body>
-    <body id="band">
-        
-    </body>
-    <body id="jobs">
-        
-    </body>
-    <body id="music">
-        
-    </body>
-    <body id="other">
-        
-    </body>
-    <body id="projects">
-        
-    </body>
-    <body id="school">
-        
-    </body>
-    <body id="tbd">
-        
-    </body>
-    <style>
-        body{
-            display:block;
-        }
-    </style>
-    <script>
+        <div id="art" class="text">
+            <h1>
+                MY ART
+            </h1>
+        </div>
+        <div id="band" class="text">
+            <div>
+                <h1>
+                    BAND
+                </h1>
+            </div>
+            <div>
+                <h2>
+                    Freshman Year
+                </h2>
+                <p>
+                    
+                </p>
+                <h2>
+                    Softmore Year
+                </h2>
+                <p>
+                    TBD
+                </p>
+                <h2>
+                    Junior Year
+                </h2>
+                <p>
+                    TBD
+                </p>
+                <h2>
+                    Senior Year
+                </h2>
+                <p>
+                    TBD
+                </p>
+            </div>
+        </div>
+        <div id="jobs" class="text">
+            <h1>
+                JOBS
+            </h1>
+        </div>
+        <div id="music" class="text">
+            <h1>
+                MUSIC
+            </h1>
+        </div>
+        <div id="other" class="text">
+            <h1>
+                OTHER
+            </h1>
+        </div>
+        <div id="projects" class="text">
+            <h1>
+                PROJECTS
+            </h1>
+        </div>
+        <div id="school" class="text">
+            <h1>
+                SCHOOL
+            </h1>
+        </div>
+        <div id="tbd" class="text">
+            <h1>
+                TBD
+            </h1>
+            <h2>
+                This page has not yet been built. Maybe next time you are on this website, this page will be avaliable. Well Wishes, Dominic Camill
+            </h2>
+        </div>
+        <style>
+            div.text{
+                position: absolute;
+                display: none;
+                width: 100vw;
+                height: 100vh;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                border: none;
+                text-align: center;
+            }
+            h1{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 55px;
+            }
+            p{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 30px;
+            }
+        </style>
+        <script>
         function switchPage(str){
-            var newPage = document.getElementById(str);
-            const ids = ["2dart", "3dart", "aboutme", "art", "band", "jobs", "music", "other", "projects", "school", "tbd"];
+            let newPage = document.getElementById(str);
+            const ids = ["home", "2dart", "3dart", "aboutme", "art", "band", "jobs", "music", "other", "projects", "school", "tbd"];
             for (var i = 0; i<ids.length; i++) {
                 console.log(ids[i]);
                 var temp = document.getElementById(ids[i]);
-                temp.style.display = block;
+                temp.style.display = none;
             }
-            newPage.style.display = contents;
+            newPage.style.display = block;
         }
-    </script>
+        </script>
+    </body>
 </html>
