@@ -1,0 +1,6 @@
+user-agent: *
+disallow: /index.html
+disallow: /images/
+disallow: /.vscode/
+
+sitemap: https://likemygames.github.io/Personal-Website/sitemap.xml
