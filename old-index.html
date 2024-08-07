@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dominic's Website
+        </title>
+        <div id="menu" class="sideBar" >
+            <img src="/Personal-Website/images/MenuBar02.png" style="height: 700px; width: 100px;">
+            <div class="scrollBar">
+                <button onclick="switchPage('home')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 10px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/HomeIcon03.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        HOME
+                    </p>
+                </button>
+                <button onclick="switchPage('aboutme')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 150px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/AboutMeIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        ABOUT ME
+                    </p>
+                </button>
+                <button onclick="switchPage('school')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 290px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/SchoolIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        SCHOOL
+                    </p>
+                </button>
+                <button onclick="switchPage('music')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 430px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/MusicIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        MUSIC
+                    </p>
+                </button>
+                <button onclick="switchPage('projects')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 570px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/ProjectsIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-bottom: 0px;margin-top: 0px;margin-right: 0px;margin-left: 0px;">
+                        PROJECTS
+                    </p>
+                </button>
+                <button onclick="switchPage('band')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 710px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/BandIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        BAND
+                    </p>
+                </button>
+                <button onclick="switchPage('art')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 850px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/ArtIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        ART
+                    </p>
+                </button>
+                <button onclick="switchPage('3dart')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 990px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/3dArtIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        3D ART
+                    </p>
+                </button>
+                <button onclick="switchPage('2dart')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1130px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/2dArtIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        2D ART
+                    </p>
+                </button>
+                <button onclick="switchPage('jobs')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1270px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/JobsIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        JOBS
+                    </p>
+                </button>
+                <button onclick="switchPage('other')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1410px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        OTHER
+                    </p>
+                </button>
+                <button onclick="switchPage('tbd')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1550px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        TBD
+                    </p>
+                </button>
+                <button onclick="switchPage('tbd')" position="absolute" style="background-image: none;background-color: none;height: 104px;width: 80px;border-width: 0px;position: absolute;padding-left: 0px;padding-right: 0px;padding-top: 0px;padding-bottom: 0px; left: 10px; top: 1690px;">
+                    <img sytle="src: url('/Personal-Website/images/HomeIcon02.png'); height: 80px; width: 80px; position: absolute;" src="/Personal-Website/images/TbdIcon.png">
+                    <p style="font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:center;margin-top: 0px;margin-bottom: 0px;">
+                        TBD
+                    </p>
+                </button>
+                
+            </div>
+            <img id="menuIcon"src="/Personal-Website/images/MenuIcon02.png" onclick="openOrCloseMenu()"style="height: 100px; width: 100px; top: 710px;">
+            <script>
+                function sameTab(str){
+                    window.location.replace(str);
+                }
+                
+                function openOrCloseMenu(){
+                    var menuIcon = document.getElementById('menuIcon');
+                    var menu = document.getElementById('menu');
+                    console.log(menu);
+                    console.log(menuIcon);
+                    if(menu.style.top === "-710px"){
+                        menu.style.top = "0px";
+                        console.log("menu moved");
+                    }else{
+                        menu.style.top = "-710px";
+                        console.log("menu moved");
+                    }
+                }
+            </script>
+        </div>
+        <style>
+            h2{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20;
+                font-weight: bold;
+            }
+            button{
+                background-color: #e6e1d8ff;
+            }
+            div.scrollBar{
+                overflow-y: scroll;
+                overflow-x: hidden;
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                right: 0px;
+                height: 650px;
+                width: 80px;
+                display: block;
+                padding-right: 40px;
+                scrollbar-width: 0px;
+                scroll-snap-type: mandatory;
+                scroll-snap-align: 1200px;
+            }
+            div.sideBar{
+                border-color:black;
+                background-image: url(/Personal-Website/images/MenuBar02.png);
+                overflow:hidden;
+                scrollbar-width: 10px;
+                scroll-snap-type: mandatory;
+                scroll-snap-align: 1200px;
+                height: 850px;
+                width: 105px;
+                z-index: 10;
+                top: 0px;
+                border-width: 3px;
+                border-radius: 0px;
+                padding-top: -40px;
+                padding-left: 0px;
+                transition: 1s;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size:x-large;
+                font-weight: bolder;
+                background-image: url("/Website/images/MenuBar.png");
+                position: absolute;
+            }
+            circle{
+                fill: #e6e1d8;
+                stroke-width: 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size:large;
+            }
+        </style>
+    </head>
+    <body style="overflow: hidden;">
+        <div id="home" style="display: block;" class="text">
+            <div style="margin-left: 10%;margin-right: 10%;">
+                <h1>
+                    Dominic's Website
+                 </h1>
+                <div style="text-align: center;">
+                    <p>
+                        Hello. This a website that I created as a repository for all of the things that I have done throughout my life. If you would like to learn more about me, you can click on the button to the right
+                    </p>
+                    <button style="background-image: url('/Personal-Website/images/AboutMeIcon.png'); background-repeat: no-repeat;width: 20vw; height: 20vh;" onclick="switchPage('aboutme')">
+                        <p>
+                            About Me
+                        </p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="2dart" class="text">
+            <h1>
+                MY 2D ART
+            </h1>
+        </div>
+        <div id="3dart" class="text">
+            <h1>
+                MY 3D ART
+            </h1>
+            <p>
+                I enjoy creating 3d art. I mostly use a program named Blender, but sometimes I use other programs too. Some of the things that I have made in blender include blackholes, planets, and universes. Some of the things that I've made are below.
+            </p>
+            <img src="/Personal-Website/images/blenderrenders/blackhole.png" style="aspect-ratio: 16 / 9;">
+            <img src="/Personal-Website/images/blenderrenders/planet.png" style="aspect-ratio: 16 / 9;">
+            <img src="/Personal-Website/images/blenderrenders/earth.png" style="aspect-ratio: 16 / 9;">
+            <img src="/Personal-Website/images/blenderrenders/universe.png" style="aspect-ratio: 16 / 9;">
+        </div>
+        <div id="aboutme" class="text">
+            <h1>
+                ABOUT ME
+            </h1>
+            <p>
+                I am just a normal person who is currenlty in highschool. more to come later.
+            </p>
+        </div>
+        <div id="art" class="text">
+            <h1>
+                MY ART
+            </h1>
+        </div>
+        <div id="band" class="text">
+            <div>
+                <h1>
+                    BAND
+                </h1>
+            </div>
+            <div>
+                <h2>
+                    Freshman Year
+                </h2>
+                <p>
+                    
+                </p>
+                <h2>
+                    Softmore Year
+                </h2>
+                <p>
+                    TBD
+                </p>
+                <h2>
+                    Junior Year
+                </h2>
+                <p>
+                    TBD
+                </p>
+                <h2>
+                    Senior Year
+                </h2>
+                <p>
+                    TBD
+                </p>
+            </div>
+        </div>
+        <div id="jobs" class="text">
+            <h1>
+                JOBS
+            </h1>
+        </div>
+        <div id="music" class="text">
+            <h1>
+                MUSIC
+            </h1>
+            <hr>
+            <p>
+                Throughout my life, I have played two different instruments. These two instruments are the alto saxophone and the baritone saxophone. If I had the opportunity, I could probably play most other saxophones. I have played the alto saxophone for five years and the baritone saxophone for almost 3 years.
+                I played alto saxophone in my elementary school's orchestra. For both of my years in middle school, I played the baritone saxophone in the concert band. For my seventh grade year in middle school I played the alto saxophone in jazz band but for my eight grade year, I played the baritone saxophone.
+
+            </p>
+        </div>
+        <div id="other" class="text">
+            <h1>
+                OTHER
+            </h1>
+        </div>
+        <div id="projects" class="text">
+            <h1>
+                PROJECTS
+            </h1>
+        </div>
+        <div id="school" class="text">
+            <h1>
+                SCHOOL
+            </h1>
+        </div>
+        <div id="tbd" class="text">
+            <h1>
+                TBD
+            </h1>
+            <h2>
+                This page has not yet been built. Maybe next time you are on this website, this page will be avaliable. Well Wishes, Dominic Camill
+            </h2>
+        </div>
+        <style>
+            div.text{
+                position: absolute;
+                display: none;
+                width: 100vw;
+                height: 100vh;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                border: none;
+                text-align: center;
+            }
+            body{
+                position: absolute;
+            }
+            h1{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 55px;
+            }
+            p{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 30px;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            hr{
+                width: 70%;
+                height: 7.5px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #e6e1d8;
+                border-radius: 5px;
+                border-width: 0px;
+            }
+        </style>
+        <script>
+        function switchPage(str){
+            let newPage = document.getElementById(str);
+            const ids = ["home", "2dart", "3dart", "aboutme", "art", "band", "jobs", "music", "other", "projects", "school", "tbd"];
+            for (var i = 0; i<ids.length; i++) {
+                let temp = document.getElementById(ids[i]);
+                temp.style.display = "none";
+            }
+            newPage.style.display = "block";
+        }
+        </script>
+    </body>
+</html>

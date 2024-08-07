@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+p {
+	font-family: "Roboto Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+}
+
+.material-symbols-rounded {
+	font-variation-settings:
+	'FILL' 1,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 24
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navBarElem {
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    color:black;
+    margin: 10px;
+    margin-right: 30px;
+	transition: 500ms;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+.navButton{
+	display: flex;
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+.navButton div{
+	align-self: flex-end;
+	height: .65px;
+	width: 0px;
+	background-color: rgb(134, 134, 134);
+	position: absolute;
+	margin-bottom: 15px;
+	border-radius: 2.5px;
+	transition: 100ms;
+	transition-timing-function: ease-in-out;
+}
+
+.navButton:hover div{
+	width: 100%;
+}
+
+.navBarElem span {
+    justify-self: center;
+    align-self: center;
+}
